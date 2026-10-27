@@ -1,0 +1,1378 @@
+/* style/global.css - Тёмно-зелёная тема (светлая не ломается) */
+
+/* Размеры шрифта */
+body.font-small {
+    font-size: 14px;
+}
+
+body.font-medium {
+    font-size: 16px;
+}
+
+body.font-large {
+    font-size: 18px;
+}
+
+/* ===== СВЕТЛАЯ ТЕМА - НЕ ТРОГАЕМ, ПУСТЬ РАБОТАЕТ ОРИГИНАЛЬНЫЙ ДИЗАЙН ===== */
+/* (стилей для .theme-light нет - значит они не переопределяются) */
+
+/* ===== ТЁМНО-ЗЕЛЁНАЯ ТЕМА (КИБЕРПАНК/МАТРИЦА) ===== */
+body.theme-dark {
+    background: #000000 !important;
+    color: #00ff41 !important;
+    background-image: url('../uploads/backgrounds/fon1.jpg') !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+body.theme-dark .container {
+    background: transparent !important;
+}
+
+/* Все карточки и контейнеры */
+body.theme-dark .course-card,
+body.theme-dark .content-section,
+body.theme-dark .modal-content,
+body.theme-dark .form-container,
+body.theme-dark .profile-container,
+body.theme-dark .settings-container,
+body.theme-dark .assignment-description,
+body.theme-dark .code-editor-container,
+body.theme-dark .messages-list,
+body.theme-dark .chat-form,
+body.theme-dark .admin-card,
+body.theme-dark .stat-box,
+body.theme-dark .topic-item,
+body.theme-dark .stat-card,
+body.theme-dark .progress-section,
+body.theme-dark .login-card,
+body.theme-dark .auth-card,
+body.theme-dark .feature-item,
+body.theme-dark .hero,
+body.theme-dark .message,
+body.theme-dark .course-detail,
+body.theme-dark .topics-list,
+body.theme-dark .header {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2) !important;
+}
+
+/* Шапка */
+body.theme-dark .header {
+    border-bottom: 2px solid #00ff41 !important;
+}
+
+body.theme-dark .logo h1 {
+    color: #00ff41 !important;
+    text-shadow: 0 0 10px #00ff41;
+}
+
+body.theme-dark .logo i {
+    color: #00ff41 !important;
+}
+
+/* Заголовки */
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark .hero h2,
+body.theme-dark .section-title,
+body.theme-dark .course-card h3,
+body.theme-dark .stat-card .value,
+body.theme-dark .modal-header h2 {
+    color: #00ff41 !important;
+    text-shadow: 0 0 5px #00ff41 !important;
+}
+
+/* Текст */
+body.theme-dark p,
+body.theme-dark span,
+body.theme-dark li,
+body.theme-dark .course-content p,
+body.theme-dark .user-details p,
+body.theme-dark .footer-info p {
+    color: #e0e0e0 !important;
+}
+
+/* Кнопки - зелёные */
+body.theme-dark .btn,
+body.theme-dark .btn-primary,
+body.theme-dark .btn-submit,
+body.theme-dark .btn-complete,
+body.theme-dark .login-btn,
+body.theme-dark .auth-btn,
+body.theme-dark .course-btn,
+body.theme-dark button[type="submit"] {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .btn:hover,
+body.theme-dark .btn-primary:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 20px #00ff41 !important;
+}
+
+/* Кнопка профиля */
+body.theme-dark .profile-btn,
+body.theme-dark .about-btn {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+/* Поля ввода */
+body.theme-dark input,
+body.theme-dark textarea,
+body.theme-dark select {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+/* Прогресс-бары */
+body.theme-dark .progress-bar {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+body.theme-dark .progress-fill {
+    background: #00ff41 !important;
+    box-shadow: 0 0 10px #00ff41 !important;
+}
+
+/* Ссылки */
+body.theme-dark a,
+body.theme-dark .back-link,
+body.theme-dark .home-link {
+    color: #00ff41 !important;
+}
+
+body.theme-dark a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px #00ff41 !important;
+}
+
+/* Чат */
+body.theme-dark .message {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .message.teacher {
+    background: rgba(0, 255, 65, 0.15) !important;
+}
+
+body.theme-dark .message-header strong {
+    color: #00ff41 !important;
+}
+
+/* Выпадающее меню */
+body.theme-dark .profile-dropdown {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .dropdown-item {
+    color: #e0e0e0 !important;
+}
+
+body.theme-dark .dropdown-item:hover {
+    background: rgba(0, 255, 65, 0.2) !important;
+}
+
+body.theme-dark .dropdown-item.logout {
+    color: #ff4444 !important;
+    border-top-color: #00ff41 !important;
+}
+
+/* Модальное окно */
+body.theme-dark .modal-content {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border: 2px solid #00ff41 !important;
+}
+
+body.theme-dark .modal-header {
+    border-bottom: 1px solid #00ff41 !important;
+}
+
+/* Сообщения */
+body.theme-dark .error-message {
+    background: rgba(255, 0, 0, 0.2) !important;
+    border: 1px solid #ff4444 !important;
+    color: #ff8888 !important;
+}
+
+body.theme-dark .success-message {
+    background: rgba(0, 255, 65, 0.15) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+/* Редактор кода */
+body.theme-dark .CodeMirror {
+    background: #0a0a0a !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .output-area {
+    background: #0a0a0a !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .output-content {
+    background: #000000 !important;
+    color: #00ff41 !important;
+}
+
+/* Иконки */
+body.theme-dark i {
+    color: #00ff41 !important;
+}
+
+/* Скроллбар */
+body.theme-dark ::-webkit-scrollbar {
+    width: 10px;
+}
+
+body.theme-dark ::-webkit-scrollbar-track {
+    background: #000000 !important;
+}
+
+body.theme-dark ::-webkit-scrollbar-thumb {
+    background: #00ff41 !important;
+    border-radius: 5px;
+}
+
+/* ===== ВЫПАДАЮЩЕЕ МЕНЮ (ОБЩИЕ СТИЛИ, НЕ ЛОМАЮТ СВЕТЛУЮ ТЕМУ) ===== */
+.profile-section {
+    position: relative;
+    z-index: 1000;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 280px;
+    border-radius: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Светлая тема для выпадающего меню */
+body.theme-light .profile-dropdown {
+    background: white;
+    border: 1px solid #e2e8f0;
+}
+
+body.theme-light .dropdown-item {
+    color: #475569;
+}
+
+body.theme-light .dropdown-item:hover {
+    background: #f8fafc;
+}
+
+body.theme-light .dropdown-item.logout {
+    color: #dc2626;
+    border-top-color: #e2e8f0;
+}
+
+/* Тёмная тема для выпадающего меню */
+body.theme-dark .profile-dropdown {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .dropdown-item {
+    color: #e0e0e0 !important;
+}
+
+body.theme-dark .dropdown-item:hover {
+    background: rgba(0, 255, 65, 0.2) !important;
+}
+
+body.theme-dark .dropdown-item.logout {
+    color: #ff4444 !important;
+    border-top-color: #00ff41 !important;
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+body.theme-light .modal-content {
+    background: white;
+    border: 1px solid #e2e8f0;
+}
+
+body.theme-dark .modal-content {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border: 2px solid #00ff41 !important;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body.theme-dark .modal-header {
+    border-bottom: 1px solid #00ff41 !important;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.modal-close:hover {
+    color: #dc2626;
+}
+
+body.theme-dark .modal-close:hover {
+    color: #ff4444 !important;
+}
+
+/* ===== ДОПОЛНИТЕЛЬНЫЕ ЭЛЕМЕНТЫ ДЛЯ ТЁМНО-ЗЕЛЁНОЙ ТЕМЫ ===== */
+
+/* Кнопка "Выполнить задание" */
+body.theme-dark .btn-assignment {
+    background: linear-gradient(135deg, #00cc33, #009900) !important;
+    border: none !important;
+    color: #000000 !important;
+    box-shadow: 0 4px 15px rgba(0, 255, 65, 0.3) !important;
+}
+
+body.theme-dark .btn-assignment:hover {
+    background: linear-gradient(135deg, #00ff41, #00cc33) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 255, 65, 0.5) !important;
+}
+
+/* Кнопка "Запустить код" и "Проверить задание" */
+body.theme-dark .btn-run,
+body.theme-dark .btn-submit {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .btn-run:hover,
+body.theme-dark .btn-submit:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+/* Кнопка удаления */
+body.theme-dark .delete-btn,
+body.theme-dark .btn-danger {
+    background: transparent !important;
+    border: 2px solid #ff4444 !important;
+    color: #ff4444 !important;
+}
+
+body.theme-dark .delete-btn:hover,
+body.theme-dark .btn-danger:hover {
+    background: #ff4444 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 15px #ff4444 !important;
+}
+
+/* Навигация по заданиям (кружки) */
+body.theme-dark .assignments-nav {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .assignment-circle {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .assignment-circle.active {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+body.theme-dark .assignment-circle.completed {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+/* Прогресс на странице курса */
+body.theme-dark .progress-notice {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .progress-notice .progress-value {
+    color: #00ff41 !important;
+}
+
+/* Сертификаты */
+body.theme-dark .certificate-section {
+    background: linear-gradient(135deg, #0a3300, #001a00) !important;
+    border: 2px solid #00ff41 !important;
+}
+
+body.theme-dark .certificate-section h3 {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .btn-certificate {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .btn-certificate:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+body.theme-dark .certificate-issued {
+    background: rgba(0, 255, 65, 0.15) !important;
+    border: 2px solid #00ff41 !important;
+}
+
+body.theme-dark .certificate-issued .btn-view {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .certificate-issued .btn-view:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+/* Тема урока (topic.php) */
+body.theme-dark .topic-header {
+    background: linear-gradient(135deg, #003300, #001a00) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .guest-message {
+    background: rgba(0, 255, 65, 0.1) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .guest-message a {
+    color: #00ff41 !important;
+    text-decoration: underline !important;
+}
+
+body.theme-dark .completed-message {
+    background: rgba(0, 255, 65, 0.15) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+/* Блок "Почему выбирают" */
+body.theme-dark .section-title {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .section-title::after {
+    background-color: #00ff41 !important;
+}
+
+/* Статистика в профиле */
+body.theme-dark .stats-grid .stat-card {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .stat-card h3 {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .stat-card .value {
+    color: #00ff41 !important;
+}
+
+/* Таблицы в админке */
+body.theme-dark .admin-card table {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+body.theme-dark .admin-card th {
+    background: rgba(0, 255, 65, 0.15) !important;
+    color: #00ff41 !important;
+    border-bottom: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .admin-card td {
+    border-bottom: 1px solid #00ff41 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Бейджи и метки */
+body.theme-dark .badge,
+body.theme-dark .label,
+body.theme-dark .tag {
+    background: rgba(0, 255, 65, 0.2) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+/* Выпадающие списки select */
+body.theme-dark select option {
+    background: #000000 !important;
+    color: #00ff41 !important;
+}
+
+/* Чекбоксы и радио-кнопки */
+body.theme-dark input[type="checkbox"],
+body.theme-dark input[type="radio"] {
+    accent-color: #00ff41 !important;
+}
+
+/* Кастомные сообщения в чате */
+body.theme-dark .chat-container .messages-list {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+/* Кнопка "Отправить" в чате */
+body.theme-dark .chat-form button[type="submit"] {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .chat-form button[type="submit"]:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+/* Ссылка "Назад" и "На главную" */
+body.theme-dark .back-link,
+body.theme-dark .home-link {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .back-link:hover,
+body.theme-dark .home-link:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px #00ff41 !important;
+}
+
+/* Поле вывода результата в заданиях */
+body.theme-dark .result-area.success {
+    background: rgba(0, 255, 65, 0.15) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .result-area.error {
+    background: rgba(255, 0, 0, 0.15) !important;
+    border: 1px solid #ff4444 !important;
+    color: #ff8888 !important;
+}
+
+/* Анимация для кнопок */
+@keyframes themeGlow {
+    0% {
+        text-shadow: 0 0 2px #00ff41;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #00ff41;
+    }
+
+    100% {
+        text-shadow: 0 0 2px #00ff41;
+    }
+}
+
+body.theme-dark .btn:hover i,
+body.theme-dark button:hover i {
+    animation: themeGlow 0.5s ease-in-out;
+}
+
+/* ===== ИСПРАВЛЕНИЕ КАРТОЧЕК КУРСОВ ===== */
+body.theme-dark .courses-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    gap: 25px !important;
+}
+
+body.theme-dark .course-card {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 16px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+body.theme-dark .course-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 0 25px rgba(0, 255, 65, 0.3) !important;
+}
+
+/* Заголовки курсов */
+body.theme-dark .course-card h3 {
+    color: #00ff41 !important;
+    font-size: 22px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Описание курса */
+body.theme-dark .course-card p {
+    color: #e0e0e0 !important;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+}
+
+/* Статистика курса (темы, часы) */
+body.theme-dark .course-stats {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .course-stats i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .course-stats span {
+    color: #00ff41 !important;
+}
+
+/* Прогресс внутри карточки курса */
+body.theme-dark .course-card .progress-container {
+    margin-top: 15px !important;
+}
+
+body.theme-dark .course-card .progress-label {
+    color: #e0e0e0 !important;
+}
+
+body.theme-dark .course-card .progress-percent {
+    color: #00ff41 !important;
+    font-weight: bold !important;
+}
+
+body.theme-dark .course-card .progress-bar {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 10px !important;
+}
+
+body.theme-dark .course-card .progress-fill {
+    background: #00ff41 !important;
+    box-shadow: 0 0 10px #00ff41 !important;
+    border-radius: 10px !important;
+}
+
+/* Кнопка внутри карточки курса */
+body.theme-dark .course-card .course-btn {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+    margin-top: 15px !important;
+    width: 100% !important;
+}
+
+body.theme-dark .course-card .course-btn:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 20px #00ff41 !important;
+}
+
+/* Иконки языков в карточках */
+body.theme-dark .course-icon i {
+    color: #00ff41 !important;
+    font-size: 40px !important;
+    filter: drop-shadow(0 0 5px #00ff41) !important;
+}
+
+/* ===== ПРОФИЛЬ - ИМЯ ПОЛЬЗОВАТЕЛЯ ===== */
+body.theme-dark .profile-header {
+    background: linear-gradient(135deg, #003300, #001a00) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .profile-info h1 {
+    color: #00ff41 !important;
+    text-shadow: 0 0 10px #00ff41 !important;
+}
+
+body.theme-dark .profile-info p {
+    color: #e0e0e0 !important;
+}
+
+body.theme-dark .profile-info p i {
+    color: #00ff41 !important;
+}
+
+/* Аватар в профиле */
+body.theme-dark .profile-avatar {
+    background: rgba(0, 255, 65, 0.2) !important;
+    border: 2px solid #00ff41 !important;
+}
+
+body.theme-dark .profile-avatar i {
+    color: #00ff41 !important;
+}
+
+/* ===== КНОПКА ПЕРЕКЛЮЧЕНИЯ ТЕМЫ ===== */
+body.theme-dark .theme-toggle-btn {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+    border-radius: 20px !important;
+    padding: 8px 15px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+body.theme-dark .theme-toggle-btn:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 15px #00ff41 !important;
+}
+
+body.theme-dark .theme-toggle-btn i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .theme-toggle-btn:hover i {
+    color: #000000 !important;
+}
+
+/* ===== ПОДВАЛ (ФУТЕР) ===== */
+body.theme-dark .footer {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-top: 2px solid #00ff41 !important;
+    margin-top: 60px !important;
+    padding: 40px 0 !important;
+}
+
+body.theme-dark .footer-logo {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .footer-logo i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .footer-logo span {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .footer-info p {
+    color: #e0e0e0 !important;
+}
+
+/* ===== СТАТИСТИКА В ПРОФИЛЕ ===== */
+body.theme-dark .stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 20px !important;
+}
+
+body.theme-dark .stats-grid .stat-card {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 16px !important;
+    text-align: center !important;
+    padding: 25px !important;
+}
+
+body.theme-dark .stats-grid .stat-card h3 {
+    color: #00ff41 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+}
+
+body.theme-dark .stats-grid .stat-card .value {
+    color: #00ff41 !important;
+    font-size: 32px !important;
+    font-weight: bold !important;
+}
+
+/* ===== СЕКЦИЯ ПРОГРЕССА В ПРОФИЛЕ ===== */
+body.theme-dark .progress-section {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 16px !important;
+}
+
+body.theme-dark .progress-section h2 {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .progress-section h2 i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .progress-section .progress-item {
+    margin-bottom: 20px !important;
+}
+
+body.theme-dark .progress-section .progress-header span:first-child {
+    color: #e0e0e0 !important;
+}
+
+body.theme-dark .progress-section .progress-header span:last-child {
+    color: #00ff41 !important;
+    font-weight: bold !important;
+}
+
+/* ===== КНОПКИ В ПРОФИЛЕ ===== */
+body.theme-dark .action-buttons .btn {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .action-buttons .btn:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 15px #00ff41 !important;
+}
+
+body.theme-dark .action-buttons .btn i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .action-buttons .btn:hover i {
+    color: #000000 !important;
+}
+
+/* ===== ЧАТ - ИСПРАВЛЕНИЕ ===== */
+
+/* Общий фон чата */
+body.theme-dark .chat-container {
+    background: transparent !important;
+}
+
+/* Список сообщений */
+body.theme-dark .messages-list {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 16px !important;
+}
+
+/* Блок сообщения */
+body.theme-dark .message {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 12px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Сообщение преподавателя */
+body.theme-dark .message.teacher {
+    background: rgba(0, 255, 65, 0.15) !important;
+    border-left: 4px solid #00ff41 !important;
+}
+
+/* Сообщение администратора */
+body.theme-dark .message.admin {
+    background: rgba(0, 255, 65, 0.1) !important;
+    border: 1px solid #ffcc00 !important;
+}
+
+/* Имя отправителя */
+body.theme-dark .message-header strong {
+    color: #00ff41 !important;
+    font-weight: bold !important;
+}
+
+/* Дата сообщения */
+body.theme-dark .message-header small {
+    color: #888888 !important;
+}
+
+/* Текст сообщения */
+body.theme-dark .message-body p {
+    color: #e0e0e0 !important;
+    line-height: 1.5 !important;
+}
+
+/* Изображения в чате */
+body.theme-dark .message-body img {
+    border: 1px solid #00ff41 !important;
+    border-radius: 8px !important;
+}
+
+/* Форма отправки сообщения */
+body.theme-dark .chat-form {
+    background: rgba(0, 0, 0, 0.85) !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 16px !important;
+    margin-top: 20px !important;
+}
+
+/* Поле ввода сообщения */
+body.theme-dark .chat-form textarea {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .chat-form textarea::placeholder {
+    color: #888888 !important;
+}
+
+/* Поле загрузки файла */
+body.theme-dark .chat-form input[type="file"] {
+    background: transparent !important;
+    color: #00ff41 !important;
+    border: 1px solid #00ff41 !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+}
+
+/* Кнопка "Отправить" в чате */
+body.theme-dark .chat-form button {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+    transition: all 0.3s ease !important;
+}
+
+body.theme-dark .chat-form button:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 15px #00ff41 !important;
+}
+
+body.theme-dark .chat-form button i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .chat-form button:hover i {
+    color: #000000 !important;
+}
+
+/* ===== ИКОНКИ КУРСОВ (КАРТИНКИ) ===== */
+
+/* Контейнер иконки курса */
+body.theme-dark .course-icon {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border-bottom: 1px solid #00ff41 !important;
+    padding: 20px !important;
+    text-align: center !important;
+}
+
+/* Иконка PHP */
+body.theme-dark .course-icon.php {
+    background: rgba(119, 123, 179, 0.3) !important;
+}
+
+body.theme-dark .course-icon.php i {
+    color: #00ff41 !important;
+}
+
+/* Иконка JavaScript */
+body.theme-dark .course-icon.javascript {
+    background: rgba(247, 223, 30, 0.2) !important;
+}
+
+body.theme-dark .course-icon.javascript i {
+    color: #00ff41 !important;
+}
+
+/* Иконка Python */
+body.theme-dark .course-icon.python {
+    background: rgba(55, 118, 171, 0.3) !important;
+}
+
+body.theme-dark .course-icon.python i {
+    color: #00ff41 !important;
+}
+
+/* Все иконки курсов */
+body.theme-dark .course-icon i {
+    font-size: 48px !important;
+    filter: drop-shadow(0 0 5px #00ff41) !important;
+}
+
+/* ===== ИСПРАВЛЕНИЕ БЕЛОГО ТЕКСТА ===== */
+
+/* Основной текст в контейнерах */
+body.theme-dark .container,
+body.theme-dark .main-content,
+body.theme-dark .course-content,
+body.theme-dark .topic-content,
+body.theme-dark .assignment-content {
+    color: #e0e0e0 !important;
+}
+
+/* Текст в секциях */
+body.theme-dark .section-description,
+body.theme-dark .course-description,
+body.theme-dark .topic-description {
+    color: #e0e0e0 !important;
+}
+
+/* Текст в статистике */
+body.theme-dark .stat-card p,
+body.theme-dark .stat-card span {
+    color: #e0e0e0 !important;
+}
+
+/* Текст в настройках */
+body.theme-dark .settings-container label {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .settings-container small {
+    color: #888888 !important;
+}
+
+/* Текст в админке */
+body.theme-dark .admin-card p,
+body.theme-dark .admin-card span,
+body.theme-dark .admin-card li {
+    color: #e0e0e0 !important;
+}
+
+/* Заголовки в админке */
+body.theme-dark .admin-card h2,
+body.theme-dark .admin-card h3 {
+    color: #00ff41 !important;
+}
+
+/* Текст в таблицах */
+body.theme-dark table td,
+body.theme-dark table th {
+    color: #e0e0e0 !important;
+}
+
+/* Текст в модальных окнах */
+body.theme-dark .modal-body p {
+    color: #e0e0e0 !important;
+}
+
+/* Текст в сообщениях об ошибках */
+body.theme-dark .error-message,
+body.theme-dark .error-message li {
+    color: #ff8888 !important;
+}
+
+/* Текст в сообщениях об успехе */
+body.theme-dark .success-message,
+body.theme-dark .success-message p {
+    color: #00ff41 !important;
+}
+
+/* ===== ДОПОЛНИТЕЛЬНО: КАРТОЧКИ КУРСОВ НА ГЛАВНОЙ ===== */
+body.theme-dark .courses-section h2 {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .courses-section h2 i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .courses-section .section-description {
+    color: #e0e0e0 !important;
+}
+
+/* ===== ЗАГОЛОВКИ И ТЕКСТЫ НА ГЛАВНОЙ ===== */
+
+/* Заголовок "Доступные курсы для изучения" - белый */
+body.theme-dark .courses-section h2 {
+    color: #ffffff !important;
+}
+
+body.theme-dark .courses-section h2 i {
+    color: #00ff41 !important;
+}
+
+/* Описание под заголовком */
+body.theme-dark .section-description {
+    color: #ffffff !important;
+}
+
+/* ===== ТЕКСТ В КАРТОЧКАХ КУРСОВ ===== */
+
+/* Описание курса ("Изучите серверный язык..." и т.д.) - зелёный */
+body.theme-dark .course-card p {
+    color: #00ff41 !important;
+}
+
+/* Статистика курса (темы, часы) - зелёный */
+body.theme-dark .course-stats span {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .course-stats i {
+    color: #00ff41 !important;
+}
+
+/* Прогресс - текст зелёный */
+body.theme-dark .course-card .progress-label span {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .course-card .progress-percent {
+    color: #00ff41 !important;
+}
+
+/* Название курса - белое или зелёное? (оставлю белое для контраста) */
+body.theme-dark .course-card h3 {
+    color: #ffffff !important;
+}
+
+/* ===== ТЕКСТ "О НАС", "ОБНОВЛЕНИЯ", "ПРОФИЛЬ" ===== */
+
+/* Кнопка "О нас" - зелёный текст */
+body.theme-dark .about-btn {
+    color: #00ff41 !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .about-btn i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .about-btn:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+body.theme-dark .about-btn:hover i {
+    color: #000000 !important;
+}
+
+/* Кнопка "Обновления" */
+body.theme-dark #updatesBtn {
+    color: #00ff41 !important;
+}
+
+body.theme-dark #updatesBtn i {
+    color: #00ff41 !important;
+}
+
+/* Кнопка профиля - зелёный текст */
+body.theme-dark .profile-btn {
+    color: #00ff41 !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .profile-btn i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .profile-btn:hover {
+    background: rgba(0, 255, 65, 0.2) !important;
+    border-color: #00ff41 !important;
+}
+
+/* Имя пользователя в кнопке профиля */
+body.theme-dark .profile-btn span {
+    color: #00ff41 !important;
+}
+
+/* ===== ТЕКСТ В ВЫПАДАЮЩЕМ МЕНЮ ПРОФИЛЯ ===== */
+
+/* Ссылки в меню */
+body.theme-dark .profile-dropdown .dropdown-item {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .profile-dropdown .dropdown-item i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .profile-dropdown .dropdown-item:hover {
+    background: rgba(0, 255, 65, 0.2) !important;
+    color: #ffffff !important;
+}
+
+/* Email и роль в меню */
+body.theme-dark .user-details p {
+    color: #e0e0e0 !important;
+}
+
+body.theme-dark .user-details small {
+    color: #888888 !important;
+}
+
+/* Кнопка "Выйти" */
+body.theme-dark .dropdown-item.logout {
+    color: #ff4444 !important;
+}
+
+body.theme-dark .dropdown-item.logout i {
+    color: #ff4444 !important;
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО "О НАС" И "ОБНОВЛЕНИЯ" ===== */
+
+/* Заголовок модального окна */
+body.theme-dark .modal-header h2 {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .modal-header h2 i {
+    color: #00ff41 !important;
+}
+
+/* Текст в модальном окне */
+body.theme-dark .about-text p {
+    color: #e0e0e0 !important;
+}
+
+/* Выделенный текст (имя, должность) */
+body.theme-dark .about-text .highlight {
+    color: #00ff41 !important;
+    background: rgba(0, 255, 65, 0.1) !important;
+    border: 1px solid #00ff41 !important;
+}
+
+body.theme-dark .about-text .highlight i {
+    color: #00ff41 !important;
+}
+
+/* Дата в модальном окне */
+body.theme-dark .about-text .date {
+    color: #888888 !important;
+}
+
+/* ===== СТАТИСТИКА КУРСОВ (ВСЕ ЗНАЧЕНИЯ ЗЕЛЁНЫЕ) ===== */
+
+body.theme-dark .course-stats span {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .course-stats i {
+    color: #00ff41 !important;
+}
+
+/* ===== ПРОГРЕСС ВЕЗДЕ ЗЕЛЁНЫЙ ===== */
+
+body.theme-dark .progress-fill {
+    background: #00ff41 !important;
+    box-shadow: 0 0 10px #00ff41 !important;
+}
+
+body.theme-dark .progress-percent {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .progress-label span:first-child {
+    color: #e0e0e0 !important;
+}
+
+/* ===== КНОПКА "ПЕРЕЙТИ К КУРСУ" ===== */
+
+body.theme-dark .course-btn {
+    background: transparent !important;
+    border: 2px solid #00ff41 !important;
+    color: #00ff41 !important;
+}
+
+body.theme-dark .course-btn i {
+    color: #00ff41 !important;
+}
+
+body.theme-dark .course-btn:hover {
+    background: #00ff41 !important;
+    color: #000000 !important;
+}
+
+body.theme-dark .course-btn:hover i {
+    color: #000000 !important;
+}
+
+/* Блок с содержанием темы */
+.content-section {
+    word-wrap: break-word;
+    /* Перенос длинных слов */
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
+    /* Скрываем лишнее, если всё-таки вылезет */
+}
+
+/* Все текстовые элементы внутри */
+.content-section p,
+.content-section h1,
+.content-section h2,
+.content-section h3,
+.content-section h4,
+.content-section h5,
+.content-section h6,
+.content-section div,
+.content-section span,
+.content-section li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Для блоков с кодом (pre, code) */
+.content-section pre,
+.content-section code {
+    white-space: pre-wrap;
+    /* Перенос длинных строк кода */
+    word-wrap: break-word;
+    overflow-x: auto;
+    /* Или скролл по горизонтали для кода */
+    max-width: 100%;
+    display: block;
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+/* Для таблиц, если они есть */
+.content-section table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Для изображений */
+.content-section img {
+    max-width: 100%;
+    height: auto;
+}

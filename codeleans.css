@@ -1,0 +1,923 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo i {
+    font-size: 32px;
+    color: #3b82f6;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Кнопка профиля */
+.profile-section {
+    position: relative;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.profile-btn i:first-child {
+    font-size: 24px;
+    color: #3b82f6;
+}
+
+.profile-btn i:last-child {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* Выпадающее меню профиля */
+.profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 280px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    padding: 20px;
+    z-index: 100;
+    display: none;
+}
+
+.profile-dropdown.show {
+    display: block;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #dbeafe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #3b82f6;
+}
+
+.user-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.user-details p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 15px 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    color: #475569;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    color: #3b82f6;
+}
+
+.dropdown-item i {
+    width: 20px;
+    color: #94a3b8;
+}
+
+.dropdown-item.logout {
+    color: #ef4444;
+}
+
+.dropdown-item.logout i {
+    color: #ef4444;
+}
+
+/* Основной контент */
+.main-content {
+    flex: 1;
+    padding-bottom: 60px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px;
+    background: linear-gradient(135deg, #dbeafe 0%, #f0f9ff 100%);
+    border-radius: 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Новая секция "Почему выбирают наше пособие" */
+.why-choose {
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 900px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #3b82f6;
+    border-radius: 2px;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+.feature-item {
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.1);
+}
+
+.feature-number {
+    width: 40px;
+    height: 40px;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 auto 15px;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Секция курсов */
+.courses-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.courses-section h2 i {
+    color: #3b82f6;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.course-icon {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.course-icon.php {
+    background-color: #f3f4f6;
+    color: #777bb3;
+}
+
+.course-icon.javascript {
+    background-color: #fef3c7;
+    color: #f7df1e;
+}
+
+.course-icon.python {
+    background-color: #dbeafe;
+    color: #3776ab;
+}
+
+.course-content {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.course-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.course-content p {
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.course-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.course-stats i {
+    margin-right: 5px;
+}
+
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.progress-percent {
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.php-progress {
+    background-color: #777bb3;
+}
+
+.javascript-progress {
+    background-color: #f7df1e;
+}
+
+.python-progress {
+    background-color: #3776ab;
+}
+
+.course-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.course-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Статистика */
+.stats-section {
+    margin-top: 40px;
+}
+
+.stats-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats-section h2 i {
+    color: #10b981;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 24px;
+}
+
+.stat-icon.total {
+    background-color: #dbeafe;
+    color: #3b82f6;
+}
+
+.stat-icon.completed {
+    background-color: #d1fae5;
+    color: #10b981;
+}
+
+.stat-icon.time {
+    background-color: #fef3c7;
+    color: #f59e0b;
+}
+
+.stat-icon.streak {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+
+.stat-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Подвал */
+.footer {
+    padding: 40px 0;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.footer-logo i {
+    font-size: 28px;
+    color: #3b82f6;
+}
+
+.footer p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .courses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .logo {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h2 {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .feature-item {
+        padding: 20px;
+    }
+    
+    .feature-item h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .courses-section h2, .stats-section h2 {
+        font-size: 24px;
+    }
+    
+    .feature-item {
+        padding: 15px;
+    }
+    
+    .feature-number {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .feature-item h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .feature-item p {
+        font-size: 14px;
+    }
+}
+
+.btn-secondary {
+    background-color: #64748b;
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: #475569;
+}
+
+.about-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 40px;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.about-btn i {
+    font-size: 18px;
+    color: #3b82f6;
+}
+.about-btn:hover {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+}
+.about-btn:hover i {
+    color: white;
+}
+
+/* ========== ТЁМНАЯ ТЕМА ========== */
+body.theme-dark {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.theme-dark .header,
+body.theme-dark .footer,
+body.theme-dark .course-card,
+body.theme-dark .content-section,
+body.theme-dark .modal-content,
+body.theme-dark .form-container,
+body.theme-dark .profile-container,
+body.theme-dark .settings-container,
+body.theme-dark .topic-header,
+body.theme-dark .chat-container,
+body.theme-dark .messages-list,
+body.theme-dark .chat-form,
+body.theme-dark .topic-item,
+body.theme-dark .course-detail,
+body.theme-dark .stats-card,
+body.theme-dark .progress-section {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+body.theme-dark .header {
+    border-bottom-color: #334155;
+}
+
+body.theme-dark .logo h1,
+body.theme-dark h1, 
+body.theme-dark h2, 
+body.theme-dark h3,
+body.theme-dark .course-content h3,
+body.theme-dark .topic-link h3 {
+    color: #f1f5f9;
+}
+
+body.theme-dark p,
+body.theme-dark .course-content p,
+body.theme-dark .topic-link p,
+body.theme-dark .message-header small,
+body.theme-dark .course-stats span {
+    color: #94a3b8;
+}
+
+body.theme-dark .profile-btn,
+body.theme-dark .about-btn {
+    background-color: #334155;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+body.theme-dark .profile-btn:hover,
+body.theme-dark .about-btn:hover {
+    background-color: #475569;
+}
+
+body.theme-dark .profile-dropdown,
+body.theme-dark .modal-content {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+body.theme-dark .dropdown-item,
+body.theme-dark .dropdown-item i {
+    color: #cbd5e1;
+}
+
+body.theme-dark .dropdown-item:hover {
+    background-color: #334155;
+}
+
+body.theme-dark input,
+body.theme-dark textarea,
+body.theme-dark select {
+    background-color: #334155;
+    border-color: #475569;
+    color: #f1f5f9;
+}
+
+body.theme-dark input::placeholder,
+body.theme-dark textarea::placeholder {
+    color: #94a3b8;
+}
+
+body.theme-dark .btn-secondary {
+    background-color: #475569;
+    color: white;
+}
+
+body.theme-dark .btn-secondary:hover {
+    background-color: #334155;
+}
+
+body.theme-dark .message {
+    background-color: #334155;
+    color: #e2e8f0;
+}
+
+body.theme-dark .message.teacher {
+    background-color: #1e3a5f;
+    border-color: #3b82f6;
+}
+
+body.theme-dark .message.admin {
+    background-color: #5e3a1f;
+    border-color: #eab308;
+}
+
+body.theme-dark .progress-bar {
+    background-color: #334155;
+}
+
+body.theme-dark .footer {
+    border-top-color: #334155;
+}
+
+/* Размеры шрифта (уже есть в каждой странице, но дублируем для надёжности) */
+body.font-small { font-size: 14px; }
+body.font-medium { font-size: 16px; }
+body.font-large { font-size: 18px; }
+
+/* ===== ЕДИНЫЙ СТИЛЬ ДЛЯ ВСЕХ КНОПОК ===== */
+
+/* Основные кнопки */
+.btn,
+.btn-primary,
+.btn-submit,
+.course-btn,
+.complete-btn,
+.start-btn,
+.btn-complete,
+button[type="submit"]:not(.toggle-password):not(.modal-close):not(.about-btn):not(.profile-btn) {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    background: #3b82f6 !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-submit:hover,
+.course-btn:hover,
+.complete-btn:hover,
+.start-btn:hover,
+.btn-complete:hover,
+button[type="submit"]:not(.toggle-password):not(.modal-close):not(.about-btn):not(.profile-btn):hover {
+    background: #2563eb !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Кнопка "Выполнить задание" - градиентная, но в синих тонах */
+.btn-assignment {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+    color: white !important;
+    padding: 14px 32px !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3) !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.btn-assignment:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Кнопки опасного действия (удаление, выход) */
+.btn-danger,
+.delete-btn {
+    background: #dc2626 !important;
+}
+
+.btn-danger:hover,
+.delete-btn:hover {
+    background: #b91c1c !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Кнопка "О нас" и "Обновления" - особый стиль, не переопределяем */
+.about-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 40px;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-btn i {
+    font-size: 18px;
+    color: #3b82f6;
+}
+
+.about-btn:hover {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+}
+
+.about-btn:hover i {
+    color: white;
+}
+
+/* Кнопка профиля */
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 40px;
+    color: #1e293b;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-btn i {
+    color: #3b82f6;
+}
+
+.profile-btn:hover {
+    border-color: #3b82f6;
+}
+
+/* Темная тема для кнопок */
+body.theme-dark .btn,
+body.theme-dark .btn-primary,
+body.theme-dark .btn-submit,
+body.theme-dark .course-btn,
+body.theme-dark .btn-complete,
+body.theme-dark button[type="submit"]:not(.toggle-password):not(.modal-close):not(.about-btn):not(.profile-btn) {
+    background: #3b82f6 !important;
+}
+
+body.theme-dark .profile-btn {
+    background-color: #334155;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+body.theme-dark .about-btn {
+    background-color: #334155;
+    border-color: #475569;
+    color: #e2e8f0;
+}
